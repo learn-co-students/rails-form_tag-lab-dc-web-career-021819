@@ -1,0 +1,16 @@
+<%# <%= form_for @student do |f| %> %>
+<label>Student Form</label>
+<%# <%= f.label :first_name %> %>
+<%# <%= f.text_field :first_name %> %>
+<%# <%= f.label :last_name %> %>
+<%# <%= f.text_field :last_name %> %>
+<%# <%= f.submit("Submit") %> %>
+<%# <% end %> %>
+
+<%= form_tag students_path do %>
+<label>First Name</label>
+<%= text_field_tag :"first_name" %>
+<label>Last Name</label>
+<%= text_field_tag :"last_name" %>
+<%= submit_tag "Submit Student" %>
+<% end %>
